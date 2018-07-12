@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SimplestHuePicker v-model="color" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import SimplestHuePicker from "./components/SimplestHuePicker.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    SimplestHuePicker
+  },
+  data() {
+    return {
+      color: {
+        hue: 0
+      }
+    };
   }
 };
 </script>
