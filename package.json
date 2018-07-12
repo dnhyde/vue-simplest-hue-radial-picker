@@ -1,6 +1,6 @@
 {
   "name": "vue-simplest-hue-radial-picker",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "desctiption": "A Vue.js component that returns the selected angle of a radial hue color picker",
   "main": "./dist/vue-simplest-hue-radial-picker.common.js",
