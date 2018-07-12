@@ -3,9 +3,7 @@
   "version": "0.1.2",
   "private": false,
   "desctiption": "A Vue.js component that returns the selected angle of a radial hue color picker",
-  "author": "dnhyde",
-  "license": "MIT",
-  "main":"./dist/vue-simplest-hue-radial-picker.common.js",
+  "main": "./dist/vue-simplest-hue-radial-picker.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -33,5 +31,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "author": "dnhyde",
+  "homepage": "https://github.com/dnhyde/vue-simplest-hue-radial-picker#readme",
+  "repository": "git@github.com:dnhyde/vue-simplest-hue-radial-picker.git",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "hue picker",
+    "radial color picker",
+    "circle color picker",
+    "circular color picker",
+    "wheel color picker",
+    "color picker"
+  ],
 }
