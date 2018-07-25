@@ -2,7 +2,9 @@
   <div id="simplest-color-picker" ref="simplestHuePicker">
     <!-- https://github.com/vuejs/vue-loader/issues/193 -->
     <!-- Prefix the URL with ~ tells webpack to resolve this as a module -->
-    <img src="~@/assets/hue-circle.svg" alt="hue">
+    <!-- <img src="~@/assets/hue-circle.svg" alt="hue"> -->
+    <HueCircleSvg/>
+    
   </div>
 </template>
 
@@ -13,12 +15,16 @@
  * {@link https://github.com/radial-color-picker/rotator/blob/master/src/main.js rotator}.
  */
 import { getRotationFromCoords, normalizeAngle } from "@/utils/transforms.js";
+import HueCircleSvg from "@/components/HueCircleSvg";
 
 /**
  * This component has one single purpose: return the angle degrees of the touch when moving
  */
 export default {
   name: "simplest-hue-picker",
+  components: {
+    HueCircleSvg
+  },
   data() {
     return {
       //active avoids to track mousemove without a mousedown
