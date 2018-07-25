@@ -1,6 +1,8 @@
 <template>
   <div id="simplest-color-picker" ref="simplestHuePicker">
-    <img src="./../assets/hue-circle.svg" alt="hue">
+    <!-- https://github.com/vuejs/vue-loader/issues/193 -->
+    <!-- Prefix the URL with ~ tells webpack to resolve this as a module -->
+    <img src="~@/assets/hue-circle.svg" alt="hue">
   </div>
 </template>
 
@@ -10,10 +12,7 @@
  * Taken from Rosen
  * {@link https://github.com/radial-color-picker/rotator/blob/master/src/main.js rotator}.
  */
-import {
-  getRotationFromCoords,
-  normalizeAngle
-} from "./../utils/transforms.js";
+import { getRotationFromCoords, normalizeAngle } from "@/utils/transforms.js";
 
 /**
  * This component has one single purpose: return the angle degrees of the touch when moving

@@ -1,11 +1,12 @@
 <template>
   <div id="app">
+    <p>HUE value: {{color.hue}}</p>
     <SimplestHuePicker v-model="color" />
   </div>
 </template>
 
 <script>
-import SimplestHuePicker from "./components/SimplestHuePicker.vue";
+import SimplestHuePicker from "@/components/SimplestHuePicker.vue";
 
 export default {
   name: "app",
