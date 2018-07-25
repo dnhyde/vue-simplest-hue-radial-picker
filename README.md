@@ -7,6 +7,9 @@ A component to add a radial colopicker as a Vue component inside your Vue.js app
 npm install --save vue-simplest-hue-radial-picker
 ```
 
+## Demo
+Here is the codesandbox [demo](https://codesandbox.io/s/4624pn109)
+
 ## Usage
 
 Add the component in your vue template
